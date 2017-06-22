@@ -7,8 +7,12 @@ import scala.scalanative.native._
 @extern
 object StatisticsBindings {
 
+  def gsl_stats_mean(data : Ptr[Double], stride : native.CSize, n : native.CSize) : Double = extern
 
-  @name("gsl_stats_mean")
-  def gsl_stats_mean(data : Array[native.CDouble], stride : native.CSize, n : native.CSize) : Double = extern
+  def gsl_stats_variance (data : Ptr[Double], stride : native.CSize, n : native.CSize) : Double = extern
+
+  def gsl_stats_sd(data: Ptr[Double], stride : native.CSize, n: native.CSize) : Double = extern
+
+  def gsl_stats_tss(data: Ptr[Double], stride : native.CSize, n: native.CSize) : Double = extern
 
 }
