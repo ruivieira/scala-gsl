@@ -17,7 +17,7 @@ object Gaussian {
 
 }
 
-class Gaussian(val mean: Double, val std: Double) {
+class Gaussian(val mean: Double, val std: Double) extends ContinuousUnivariateDistribution {
 
   def sample: Double = Gaussian.sample(mean, std)
 
