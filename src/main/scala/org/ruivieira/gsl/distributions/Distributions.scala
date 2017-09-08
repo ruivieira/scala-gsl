@@ -1,6 +1,6 @@
 package org.ruivieira.gsl.distributions
 
-import org.ruivieira.gsl.DistributionBindings.{
+import org.ruivieira.gsl.bindings.DistributionBindings.{
   gsl_rng_alloc,
   gsl_rng_env_setup
 }

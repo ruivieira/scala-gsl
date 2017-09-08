@@ -1,6 +1,6 @@
 package org.ruivieira.gsl.distributions
 
-import org.ruivieira.gsl.DistributionBindings
+import org.ruivieira.gsl.bindings.DistributionBindings
 
 /**
   * Created by rcardoso on 24/06/2017.

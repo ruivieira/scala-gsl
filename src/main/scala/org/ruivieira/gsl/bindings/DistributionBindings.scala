@@ -1,4 +1,4 @@
-package org.ruivieira.gsl
+package org.ruivieira.gsl.bindings
 
 import scala.scalanative.native
 import scala.scalanative.native.{Ptr, extern, link}
@@ -23,5 +23,8 @@ object DistributionBindings {
   def gsl_rng_env_setup: Ptr[Gsl_rng_type] = extern
 
   def gsl_ran_gaussian(r: Ptr[Gsl_rng], sigma: Double): Double = extern
+
+  def gsl_ran_poisson (r: Ptr[Gsl_rng], mu : Double) : native.CUnsignedInt = extern
+
 
 }
