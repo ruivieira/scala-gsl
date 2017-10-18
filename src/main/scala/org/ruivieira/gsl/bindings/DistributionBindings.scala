@@ -24,7 +24,10 @@ object DistributionBindings {
 
   def gsl_ran_gaussian(r: Ptr[Gsl_rng], sigma: Double): Double = extern
 
+  // Poisson distribution
+
   def gsl_ran_poisson (r: Ptr[Gsl_rng], mu : Double) : native.CUnsignedInt = extern
 
+  def gsl_ran_poisson_pdf (k : Int, mu : Double) : Double = extern
 
 }
